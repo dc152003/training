@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <script>
+        function displayPostData(){
+            var postId = document.getElementById('txtPostId').value;
+            var url =" https://jsonplaceholder.typicode.com/posts" + postId;
+            fetch(url)
+            .then(response => response.json())
+            .then(result => {console.log(result);
+               
+                document.getElementById('displaytxtPostId').innerText=result.id;
+                document.getElementById('txtPostTitle').innerText=result.title;
+                document.getElementById('txtPostBody').innerText=result.body;
+                
+            })
+                    
+            .catch(err => console.log(err));
+        }
+    </script>
+</head>
+<body>
+    <h1>Post Details</h1>
+    <input type="number" id="txtPostID" onblur="getPostDetails()" placeholder="enter text">
+    <br/>
+    <h1 id="displaytxtPostId"></h1>
+    <h1 id="txtPostTitle"></h1>
+    <h1 id="txtPostBody"></h1>
+    <button onclick="displayPostData()">Display post data</button>    
+ 
+
+</body>
+</html>

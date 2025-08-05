@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greetUser(){
+            alert('hey there')
+        }
+
+        function getUserName(){
+            var userName = document.getElementById('txtUser').value;
+            if(userName == ''){
+                document.getElementById('greeting').innerHTML = 'forgot to type your name.';
+                document.getElementById('greeting').style.color = 'red'
+            }
+            document.getElementById('greeting').innerHTML = 'hello n welcome ' + userName;
+        }
+
+        function Calculate(){
+            var n1 = document.getElementById('txtNum1').value;
+            var n2 = document.getElementById('txtNum2').value;
+            document.getElementById('add').innerHTML = "Addition: " + (parseInt(n1)+parseInt(n2));
+            document.getElementById('sub').innerHTML = "Subtraction: " + (parseInt(n2)-parseInt(n1));
+            document.getElementById('div').innerHTML = "division: " + (parseInt(n1)/parseInt(n2));
+            document.getElementById('mul').innerHTML = "multiplication: " + (parseInt(n1)*parseInt(n2));
+  
+        }
+    </script>
+</head>
+<body>
+    <h1>welcome</h1>
+    <button onclick="greetUser()">Click me</button>
+
+    <br/>
+    <hr/>
+
+    <input type="text" id="txtUser" onblur="getUserName()" placeholder="enter text">
+    <h3 id="greeting"></h3>
+
+    <br/>
+    <hr/>
+
+    <input type="number" id="txtNumber" placeholder="enter number" >
+    <input type="number" id="txtNumber" placeholder="enter number" >
+    <button onclick="addNumbers()">Calculate</button>
+    <h4 id="add"></h4>
+    <h4 id="sub"></h4>
+    <h4 id="div"></h4>
+    <h4 id="mul"></h4>
+
+</body>
+</html>
