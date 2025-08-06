@@ -1,0 +1,35 @@
+<h1>Welcome to angular</h1>
+<p>Devaanshi's first angular app</p>
+
+<div>
+  <h2>First name: {{fn}}</h2>
+  <h2>Last name: {{ln}}</h2>
+  <h2>Age: {{age}}</h2>
+  <h2>gender:{{gender}}</h2>
+  <h2>email:{{email}} </h2>
+
+  <ul>
+    <li *ngFor='let h of hobbies'>{{h}}</li>
+  </ul>
+
+  <br>
+  <br>
+
+  <select>
+    <option *ngFor='let h of hobbies'>{{h}}</option>
+  </select>
+
+  <br>
+  <br>
+
+  <span *ngFor='let h of hobbies'>{{h}} <input type="checkbox"/>  
+  </span>
+
+  <br>
+  <br>
+
+  <button (click)="greetUser()">Greet User</button>
+  <button (click)="addHobby('skating')"> Add hobby</button>
+
+
+</div>

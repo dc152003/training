@@ -1,0 +1,45 @@
+<h1 class="h1">Welcome data in angular</h1>
+
+<h3>{{aapName}}</h3>
+
+<ol>
+    <li *ngFor='let tod of type_of_data'>{{tod}}</li>
+</ol>
+
+<hr>
+<div>
+    <h3>Product Details</h3>
+        <ul>
+            <h6>Product Id: {{productDetails.pid}}</h6>
+            <h6>Product name: {{productDetails.pname}}</h6>
+            <h6>Price: {{productDetails.pprice}}</h6>
+            <h6>Quantity: {{productDetails.pqty}}</h6>
+            <h6>Category: {{productDetails.pcategory}}</h6>
+        </ul>
+</div>
+
+
+<hr>
+<h3>Product List Table</h3>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Product Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prod of productList">
+      <td>{{prod.pid}}</td>
+      <td>{{prod.pname}}</td>
+      <td>{{prod.pprice}}</td>
+      <td>{{prod.pqty}}</td>
+      <td>{{prod.pcategory}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
