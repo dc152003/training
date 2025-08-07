@@ -1,0 +1,32 @@
+<h2>📊 Stock Portfolio</h2>
+
+<div class="summary">
+  <p><strong>Total Investment:</strong> {{ totalInvestment | currency }}</p>
+  <p><strong>Portfolio Value:</strong> {{ portfolioValue | currency }}</p>
+  <p><strong>Status:</strong> {{ overallStatus }}</p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stock ID</th>
+      <th>Quantity</th>
+      <th>Purchase Price</th>
+      <th>Current Price</th>
+      <th>Invested</th>
+      <th>Current Value</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of stocks">
+      <td>{{ s.stockId }}</td>
+      <td>{{ s.qty }}</td>
+      <td>{{ s.purchasePrice | currency }}</td>
+      <td>{{ s.currentPrice | currency }}</td>
+      <td>{{ s.qty * s.purchasePrice | currency }}</td>
+      <td>{{ s.qty * s.currentPrice | currency }}</td>
+      <td>{{ getStockStatus(s) }}</td>
+    </tr>
+  </tbody>
+</table>

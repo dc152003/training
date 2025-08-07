@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bankingAPP": {
+    "componentsDemo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -18,23 +18,15 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-
-
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "/assets"
-              },
-              "src/favicon.ico"
+                "input": "public"
+              }
             ],
             "styles": [
-              "src/styles.css"],
-
-            
-
-
-
+              "src/styles.css"
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -69,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "bankingAPP:build:production"
+              "buildTarget": "componentsDemo:build:production"
             },
             "development": {
-              "buildTarget": "bankingAPP:build:development"
+              "buildTarget": "componentsDemo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,23 +80,15 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-
-
-
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "/assets"
-              },
-              "src/favicon.ico"
+                "input": "public"
+              }
             ],
             "styles": [
               "src/styles.css"
             ]
-
-
-
           }
         }
       }
