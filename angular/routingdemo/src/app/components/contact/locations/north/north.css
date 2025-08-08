@@ -1,0 +1,9 @@
+table {
+  background-color: #f3e5f5; /* Light purple */
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #6a1b9a;
+  padding: 8px;
+}

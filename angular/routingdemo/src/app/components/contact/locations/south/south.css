@@ -1,0 +1,9 @@
+table {
+  background-color: #e8f5e9; /* Light green */
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #2e7d32;
+  padding: 8px;
+}

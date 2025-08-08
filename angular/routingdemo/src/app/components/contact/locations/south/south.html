@@ -1,0 +1,13 @@
+<h2>South Region Offices</h2>
+<table>
+  <tr>
+    <th>City</th>
+    <th>Call</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let o of office">
+    <td>{{ o.city }}</td>
+    <td>{{ o.call }}</td>
+    <td>{{ o.email }}</td>
+  </tr>
+</table>
