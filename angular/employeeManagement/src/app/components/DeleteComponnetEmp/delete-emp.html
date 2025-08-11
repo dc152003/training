@@ -1,0 +1,15 @@
+<!-- <div class="container">
+  <h2>Delete Employee</h2>
+  <button (click)="deleteEmp()">Delete Employee</button>
+</div>
+
+-->
+
+
+<div class="container">
+  <h2>Delete Employee</h2>
+  <form (ngSubmit)="onDeleteEmp()">
+    <input type="number" [(ngModel)]="empNoToDelete" name="empNo" placeholder="Enter Emp No" required />
+    <button type="submit">Delete</button>
+  </form>
+</div>

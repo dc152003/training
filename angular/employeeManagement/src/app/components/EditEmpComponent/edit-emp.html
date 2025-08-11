@@ -1,0 +1,21 @@
+<!-- <div class="container">
+  <h2>Edit Employee</h2>
+  <button (click)="editEmp()">Update Employee</button>
+</div>
+ -->
+
+
+ <div class="container">
+  <h2>Edit Employee</h2>
+  <form (ngSubmit)="onEditEmp()">
+    <input type="number" [(ngModel)]="editEmp.empNo" name="empNo" placeholder="Emp No" required />
+    <input type="text" [(ngModel)]="editEmp.empName" name="empName" placeholder="Name" />
+    <input type="text" [(ngModel)]="editEmp.empDesignation" name="empDesignation" placeholder="Designation" />
+    <input type="number" [(ngModel)]="editEmp.empSalary" name="empSalary" placeholder="Salary" />
+    <label>
+      <input type="checkbox" [(ngModel)]="editEmp.empIsPermanent" name="empIsPermanent" />
+      Permanent
+    </label>
+    <button type="submit">Update Employee</button>
+  </form>
+</div>
