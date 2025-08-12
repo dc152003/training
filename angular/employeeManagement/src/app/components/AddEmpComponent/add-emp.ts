@@ -1,19 +1,3 @@
-// import { Component } from '@angular/core';
-// import { EmpService } from '../../services/emp-service';
-
-
-// @Component({
-//   selector: 'app-add-emp',
-//   templateUrl: './add-emp.html',
-//   styleUrls: ['./add-emp.css']
-// })
-// export class AddEmpComponent {
-//   constructor(private empService:EmpService) {}
-
-//   addEmp() {
-//     this.empService.addEmp();
-//   }
-// }
 
 import { Component } from '@angular/core';
 import { EmpService, Employee } from '../../services/emp-service';
