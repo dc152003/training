@@ -1,0 +1,37 @@
+MongoDB is a document database
+
+
+The MongoDB Query API is the way you will interact with your data.
+
+The MongoDB Query API can be used in two ways:
+
+CRUD Operations
+Aggregation Pipelines
+
+
+
+C:\Users\user-two>mongosh
+
+test> use shoppingdb
+shoppingdb> db.productList.insertOne({_id:101,pName:'T-shirt',pPrice:3000,pBrand:'Superdry',pIsInStock:true});
+db.productList.insertOne({_id:100, pName: 'Jeans', pPrice: 4500, pBrand: 'Levi\'s', pIsInStock: true});
+db.productList.insertOne({_id:111, pName: 'Sneakers', pPrice: 6000, pBrand: 'Nike', pIsInStock: true});
+db.productList.insertOne({_id:105, pName: 'Jacket', pPrice: 8500, pBrand: 'North Face', pIsInStock: false});
+db.productList.insertOne({_id:109, pName: 'Watch', pPrice: 12000, pBrand: 'Fossil', pIsInStock: true});
+db.productList.insertOne({_id:110, pName: 'Sunglasses', pPrice: 3000, pBrand: 'Ray-Ban', pIsInStock: false});
+db.productList.insertOne({_id:112, pName: 'Backpack', pPrice: 4000, pBrand: 'Wildcraft', pIsInStock: true});
+db.productList.insertOne({_id:113, pName: 'Hat', pPrice: 1500, pBrand: 'Adidas', pIsInStock: true});
+db.productList.insertOne({_id:114, pName: 'Perfume', pPrice: 5000, pBrand: 'Calvin Klein', pIsInStock: false});
+db.productList.insertOne({_id:115, pName: 'Belt', pPrice: 2000, pBrand: 'Tommy Hilfiger', pIsInStock: true});
+
+
+
+shoppingdb> show collections
+shoppingdb> db.productList.find().pretty();
+
+
+
+
+db.productList.find({ pBrand: 'Apple' });
+
+db.posts.find({ likes: { $eq: 3 } })
