@@ -2,3 +2,42 @@ https://github.com/Bhavya-baheti/MMC_training_all
 
 
 https://github.com/Tarushi01/MMC_Tarushi_0725/tree/main
+
+
+
+
+
+
+git download
+
+mongodb
+mongodb shell download
+
+nodejs download
+node  -v
+
+angular application
+npm install -g @angular/cli
+ng version
+ng new applicationName
+for zoneless - no
+select css
+cd applicationName
+ng serve
+ng g c componentName
+ng g s serviceName
+cntrl c to exit
+directives ->  ng g d
+pipes -> ng g pipes
+routes
+
+
+mongodb
+use dbName
+db.createCollection('collectionName')
+db.collectionName.insertOne({_,_})
+.exit
+
+react application
+create-react-app
+
