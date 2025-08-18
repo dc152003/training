@@ -13,6 +13,8 @@ vs code download
   liveserver
   code runner
   githuib copilot
+  docker
+
 
 git download
 
@@ -55,3 +57,14 @@ docker.com download docker desktop
 docker --version
 docker id
 docker login name
+
+docker application
+    ng new shoppinglist
+    cd shoppinglist
+    cntrl shift p -> docker -> no, yes
+    docker build . -t shoppingmicroservice:v1
+    docker scout quickview
+    docker images
+    docker run -d -p 2020:80 shoppingmicroservice:v1
+    docker tag shoppingmicroservice:v1 dc1509/shoppingmicroservice:v1
+    docker push dc1509/shoppingmicroservice:v1
