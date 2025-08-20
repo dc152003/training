@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-accordion-group>
+    <ion-accordion value="mens">
+      <ion-item slot="header">
+        <ion-label>Mens</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-card *ngFor="let item of Mens">
+          <ion-card-header>
+            <ion-card-title>{{item.name}}</ion-card-title>
+            <ion-card-subtitle>{{item.brand}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Price: ₹{{item.price}}</p>
+            <ion-button shape="round" color="primary">Add to Cart</ion-button>
+            <ion-button shape="round" size="small" fill="outline"> <ion-icon slot="icon-only"
+                name="heart"></ion-icon></ion-button>
+            <!-- <ion-button shape="round" fill="clear" color="danger">
+              <ion-icon slot="icon-only" name="heart"></ion-icon>
+            </ion-button> -->
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-accordion>
+
+    <!-- Repeat for Womens, Kids, Electronics -->
+    <ion-accordion value="womens">
+      <ion-item slot="header">
+        <ion-label>Womens</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-card *ngFor="let item of Womens">
+          <ion-card-header>
+            <ion-card-title>{{item.name}}</ion-card-title>
+            <ion-card-subtitle>{{item.brand}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Price: ₹{{item.price}}</p>
+            <ion-button shape="round" color="primary">Add to Cart</ion-button>
+            <ion-button shape="round" size="small" fill="outline"> <ion-icon slot="icon-only"
+                name="heart"></ion-icon></ion-button>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-accordion>
+
+    <!-- Kids -->
+    <ion-accordion value="kids">
+      <ion-item slot="header">
+        <ion-label>Kids</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-card *ngFor="let item of Kids">
+          <ion-card-header>
+            <ion-card-title>{{item.name}}</ion-card-title>
+            <ion-card-subtitle>{{item.brand}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Price: ₹{{item.price}}</p>
+            <ion-button shape="round" color="primary">Add to Cart</ion-button>
+            <ion-button shape="round" size="small" fill="outline"> <ion-icon slot="icon-only"
+                name="heart"></ion-icon></ion-button>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-accordion>
+
+    <!-- Electronics -->
+    <ion-accordion value="electronics">
+      <ion-item slot="header">
+        <ion-label>Electronics</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-card *ngFor="let item of Electronics">
+          <ion-card-header>
+            <ion-card-title>{{item.name}}</ion-card-title>
+            <ion-card-subtitle>{{item.brand}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Price: ₹{{item.price}}</p>
+            <ion-button shape="round" color="primary">Add to Cart</ion-button>
+            <ion-button shape="round" size="small" fill="outline"> <ion-icon slot="icon-only"
+                name="heart"></ion-icon></ion-button>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

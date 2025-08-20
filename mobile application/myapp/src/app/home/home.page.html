@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ShoppingApp
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>ShoppingApp</ion-title>
+      <ion-chip slot="end" color="primary"><ion-label>Login</ion-label></ion-chip>
+      <ion-chip slot="end" color="danger"><ion-label>Logoff</ion-label></ion-chip>
+
+      <ion-buttons slot="end">
+        <ion-button routerLink="/products">Products</ion-button>
+        <ion-button routerLink="/register" color="success">Register</ion-button>
+        <ion-chip routerLink="/login"><ion-label>Login</ion-label></ion-chip>
+        <ion-button routerLink="/browse">Browse</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div>
+    <br>
+
+
+
+    <strong>Shop with ease</strong>
+    <p>Explore products from top brand </p>
+    <p>More content coming soon </p>
+    <p> By {{developedBy}}</p>
+    <ion-button (click)="greetUser()">Click Me</ion-button>
+
+
+
+    <br>
+
+
+
+    <ion-card *ngFor="let product of productList">
+      <ion-card-header>
+        <ion-card-title>{{product.pName}}</ion-card-title>
+        <ion-card-subtitle>{{product.pBrand}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>ID: {{product.pId}}</p>
+        <p>Price: ₹{{product.pPrice}}</p>
+        <ion-button fill="clear" color="danger">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+
+    <!-- <p>Product List</p>
+    <ion-list>
+      <ion-item *ngFor="let product of productList">
+        <ion-label>
+          {{product.pId}}
+        </ion-label>
+        <ion-label>
+          {{product.pName}}
+        </ion-label>
+        <ion-label>
+          {{product.pBrand}}
+        </ion-label>
+        <ion-label>
+          {{product.pPrice}}
+        </ion-label>
+        <ion-button><ion-icon slot="end" name="heart"></ion-icon></ion-button>
+      </ion-item>
+    </ion-list> -->
+
+
+
+
+
+  </div>
+
+  <div>
+
+  </div>
+</ion-content>
