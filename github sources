@@ -68,3 +68,11 @@ docker application
     docker run -d -p 2020:80 shoppingmicroservice:v1
     docker tag shoppingmicroservice:v1 dc1509/shoppingmicroservice:v1
     docker push dc1509/shoppingmicroservice:v1
+
+
+
+Ionic application development
+    node js and angular install
+    npm install -g @ionic/cli
+    ionic serve
+    ionic g s serviceName
