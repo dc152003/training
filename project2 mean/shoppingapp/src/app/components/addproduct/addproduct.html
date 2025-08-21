@@ -1,0 +1,35 @@
+<!-- <h2>Add Product</h2>
+<form (ngSubmit)="addProduct()">
+  <label>ID: <input [(ngModel)]="product._id" name="_id"></label><br><br>
+  <label>Name: <input [(ngModel)]="product.pName" name="pName"></label><br><br>
+  <label>Price: <input [(ngModel)]="product.pPrice" name="pPrice"></label><br><br>
+  <label>Brand: <input [(ngModel)]="product.pBrand" name="pBrand"></label><br><br>
+  <label>In Stock:
+    <input type="checkbox" [(ngModel)]="product.pIsInStock" name="pIsInStock">
+  </label><br><br>
+  <button type="submit">Add Product</button>
+</form> -->
+
+
+<h2 class="title">Add Product</h2>
+
+<div class="form-container">
+  <label>ID:</label>
+  <input [(ngModel)]="product._id" name="_id" type="number" class="form-control" />
+
+  <label>Name:</label>
+  <input [(ngModel)]="product.pName" name="pName" type="text" class="form-control" />
+
+  <label>Price:</label>
+  <input [(ngModel)]="product.pPrice" name="pPrice" type="number" class="form-control" />
+
+  <label>Brand:</label>
+  <input [(ngModel)]="product.pBrand" name="pBrand" type="text" class="form-control" />
+
+  <label>
+    <input type="checkbox" [(ngModel)]="product.pIsInStock" name="pIsInStock" />
+    In Stock
+  </label>
+
+  <button type="submit" (click)="addProduct()" class="btn">Add Product</button>
+</div>

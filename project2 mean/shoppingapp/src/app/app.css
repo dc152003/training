@@ -1,0 +1,48 @@
+/* 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+
+nav {
+  background: linear-gradient(90deg, #4CAF50, #2196F3);
+  padding: 15px 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+  border-bottom: 2px solid #ffeb3b;
+  padding-bottom: 3px;
+}
+
+nav a.active {
+  border-bottom: 2px solid #fff;
+  font-weight: 600;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0;
+}
+
+
+router-outlet {
+  display: block;
+  padding: 20px 40px;
+} */

@@ -1,0 +1,47 @@
+<!-- <h2>Update Product</h2>
+
+<label>ID to Update:
+  <input type="number" [(ngModel)]="id" name="id">
+</label><br><br>
+
+<label>New Name:
+  <input [(ngModel)]="updatedProduct.pName" name="pName">
+</label><br><br>
+
+<label>New Price:
+  <input type="number" [(ngModel)]="updatedProduct.pPrice" name="pPrice">
+</label><br><br>
+
+<label>New Brand:
+  <input [(ngModel)]="updatedProduct.pBrand" name="pBrand">
+</label><br><br>
+
+<label>In Stock:
+  <input type="checkbox" [(ngModel)]="updatedProduct.pIsInStock" name="pIsInStock">
+</label><br><br>
+
+<button (click)="updateProduct()">Update Product</button> -->
+
+
+<h2 class="title">Update Product</h2>
+
+<div class="form-container">
+  <label>ID to Update:</label>
+  <input [(ngModel)]="id" name="id" type="number" class="form-control" />
+
+  <label>New Name:</label>
+  <input [(ngModel)]="updatedProduct.pName" name="pName" type="text" class="form-control" />
+
+  <label>New Price:</label>
+  <input [(ngModel)]="updatedProduct.pPrice" name="pPrice" type="number" class="form-control" />
+
+  <label>New Brand:</label>
+  <input [(ngModel)]="updatedProduct.pBrand" name="pBrand" type="text" class="form-control" />
+
+  <label>
+    <input [(ngModel)]="updatedProduct.pIsInStock" name="pIsInStock" type="checkbox" />
+    In Stock
+  </label>
+
+  <button (click)="updateProduct()" class="btn">Update Product</button>
+</div>
