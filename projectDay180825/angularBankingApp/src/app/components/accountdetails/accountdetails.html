@@ -1,0 +1,13 @@
+<div class="account-details">
+  <h2>Account Summary</h2>
+  <p><strong>Name:</strong> {{ account.name }}</p>
+  <p><strong>Account Number:</strong> {{ account.number }}</p>
+  <p><strong>Balance:</strong> ${{ account.balance }}</p>
+
+  <h3>Recent Transactions</h3>
+  <ul>
+    <li *ngFor="let txn of transactions">
+      {{ txn.date }} - {{ txn.description }} - ${{ txn.amount }}
+    </li>
+  </ul>
+</div>

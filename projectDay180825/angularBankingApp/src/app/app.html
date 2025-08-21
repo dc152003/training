@@ -1,0 +1,22 @@
+<h1>Welcome to Banking</h1>
+
+<div>
+  <h4>Welcome: {{ _whoisthisuser.userName }}</h4>
+  <h4 id="message">{{ _whoisthisuser.message }}</h4>
+</div>
+
+<table>
+  <tr>
+    <td *ngIf="_whoisthisuser.isUserLoggedIn">
+      <a (click)="_whoisthisuser.logout()">Logout</a>
+    </td>
+    <td><a routerLink="/home">Home</a></td>
+    <td><a routerLink="/login">Login</a></td>
+    <td><a routerLink="/register">Register</a></td>
+    <td><a routerLink="/about">About</a></td>
+    <td><a routerLink="/accountdetails">Account Details</a></td>
+    <td><a routerLink="/transfer">Transfer</a></td>
+  </tr>
+</table>
+
+<router-outlet></router-outlet>
