@@ -1,0 +1,51 @@
+/* #message{
+    color: red;
+}
+#welcome{
+    color: green;
+    text-align: center;
+} */
+
+/* ===== App Component Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+h1 {
+    color: #1a3c6e;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* ===== Navigation Bar ===== */
+table {
+    width: 100%;
+    background-color: #1a3c6e;
+    padding: 10px 0;
+}
+
+table td {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+table a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+table a:hover {
+    color: #ffdd57;
+}
+
+/* ===== User Message ===== */
+#message {
+    color: #007b5e;
+    font-weight: bold;
+    margin-left: 20px;
+}

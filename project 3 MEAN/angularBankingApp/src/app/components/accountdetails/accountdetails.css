@@ -1,0 +1,40 @@
+/* ===== Account Details Component Styles ===== */
+.account-details {
+    background: #fff;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+}
+
+.account-details h2 {
+    color: #1a3c6e;
+    margin-bottom: 15px;
+}
+
+.account-details p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.account-details strong {
+    color: #333;
+}
+
+.account-details h3 {
+    margin-top: 20px;
+    color: #007b5e;
+}
+
+.account-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-details li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 14px;
+}

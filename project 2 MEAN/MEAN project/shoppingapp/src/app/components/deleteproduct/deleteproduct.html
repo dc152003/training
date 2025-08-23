@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Product</title>
+  <link rel="stylesheet" href="deleteproduct.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <h2 class="title">🗑️ Delete Product</h2>
+
+    <form class="form-container">
+      <div class="form-group">
+        <label for="id">Product ID to Delete</label>
+        <input type="number" [(ngModel)]="id" name="id" id="id" class="form-control" placeholder="Enter product ID" />
+      </div>
+
+      <button type="submit" (click)="deleteProduct()" class="btn">Delete Product</button>
+    </form>
+  </div>
+</body>
+</html>

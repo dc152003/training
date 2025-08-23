@@ -1,0 +1,56 @@
+/* ===== Transfer Component Styles ===== */
+.transfer-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.transfer-form h2 {
+    color: #1a3c6e;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.transfer-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.transfer-form label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+.transfer-form input,
+.transfer-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    resize: none;
+    transition: border 0.3s;
+}
+
+.transfer-form input:focus,
+.transfer-form textarea:focus {
+    border-color: #1a3c6e;
+}
+
+.transfer-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #007b5e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.transfer-form button:hover {
+    background: #005f46;
+}

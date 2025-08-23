@@ -1,0 +1,68 @@
+<!-- 
+<h2 class="title">Add Product</h2>
+
+<div class="form-container">
+  <label>ID:</label>
+  <input [(ngModel)]="product._id" name="_id" type="number" class="form-control" />
+
+  <label>Name:</label>
+  <input [(ngModel)]="product.pName" name="pName" type="text" class="form-control" />
+
+  <label>Price:</label>
+  <input [(ngModel)]="product.pPrice" name="pPrice" type="number" class="form-control" />
+
+  <label>Brand:</label>
+  <input [(ngModel)]="product.pBrand" name="pBrand" type="text" class="form-control" />
+
+  <label>
+    <input type="checkbox" [(ngModel)]="product.pIsInStock" name="pIsInStock" />
+    In Stock
+  </label>
+
+  <button type="submit" (click)="addProduct()" class="btn">Add Product</button>
+</div> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Product</title>
+  <link rel="stylesheet" href="addproduct.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <h2 class="title">🛍️ Add New Product</h2>
+
+    <form class="form-container">
+      <div class="form-group">
+        <label for="id">Product ID</label>
+        <input [(ngModel)]="product._id" name="_id" id="id" type="number" class="form-control" placeholder="Enter product ID" />
+      </div>
+
+      <div class="form-group">
+        <label for="name">Product Name</label>
+        <input [(ngModel)]="product.pName" name="pName" id="name" type="text" class="form-control" placeholder="Enter product name" />
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input [(ngModel)]="product.pPrice" name="pPrice" id="price" type="number" class="form-control" placeholder="Enter price" />
+      </div>
+
+      <div class="form-group">
+        <label for="brand">Brand</label>
+        <input [(ngModel)]="product.pBrand" name="pBrand" id="brand" type="text" class="form-control" placeholder="Enter brand name" />
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" [(ngModel)]="product.pIsInStock" name="pIsInStock" id="stock" />
+        <label for="stock">In Stock</label>
+      </div>
+
+      <button type="submit" (click)="addProduct()" class="btn">Add Product</button>
+    </form>
+  </div>
+</body>
+</html>
