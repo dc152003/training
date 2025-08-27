@@ -6,6 +6,14 @@ https://github.com/Tarushi01/MMC_Tarushi_0725/tree/main
 
 
 
+
+https://www.tutorialspoint.com/software_testing_dictionary/web_application_testing.htm
+https://angular.dev/guide/testing
+https://www.youtube.com/watch?v=u4ZoJKF_VuA
+
+
+
+
 chrome download
 copiolt download
 
@@ -76,3 +84,18 @@ Ionic application development
     npm install -g @ionic/cli
     ionic serve
     ionic g s serviceName
+
+Selenium 
+  python --version
+  pip install selenium
+  pip install webdriver-manager
+  then code in a py file
+            ```bash
+            from selenium import webdriver
+            from selenium.webdriver.chrome.service import Service
+            from webdriver_manager.chrome import ChromeDriverManager 
+            service = Service(ChromeDriverManager().install())
+            driver = webdriver.Chrome(service=service, options=options)
+            driver.get("https://www.google.com")
+            print(driver.title)
+            driver.quit()
