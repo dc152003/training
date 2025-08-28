@@ -8,7 +8,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
-const uri = "mongodb://127.0.0.1:27017";
+const uri = "mongodb+srv://devaanshi:Password!1234@myshopping-cluster.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
+//const uri = "mongodb://127.0.0.1:27017";
 const client = new MongoClient(uri);
 
 let db, productsCollection;
